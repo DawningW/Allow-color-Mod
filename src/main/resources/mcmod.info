@@ -1,0 +1,16 @@
+[
+{
+  "modid": "allowcolormod",
+  "name": "Allow color Mod",
+  "description": "A Minecraft mod that can type color codes in game.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["QingChenW"],
+  "credits": "Thank The Forge and FML.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
