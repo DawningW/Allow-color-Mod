@@ -1,4 +1,4 @@
-package com.github.qingchenw.allowcolor;
+package com.github.wdawning.qingchenw.allowcolor;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
@@ -7,14 +7,16 @@ import org.objectweb.asm.tree.MethodNode;
 
 import net.minecraft.launchwrapper.IClassTransformer;
 
-
 public class AllowColorTransformer implements IClassTransformer
 {
 	@Override
 	public byte[] transform(String name, String transformedName, byte[] basicClass)
 	{
-	    if ("net.minecraft.util.ChatAllowedCharacters".equals(transformedName))
+	    if (name.equals("v") || transformedName.equals("net.minecraft.util.ChatAllowedCharacters"))
 	    {
+	    	System.out.println("[allowcolor] class name is: " + name);
+	    	System.out.println("[allowcolor] class transformedName is: " + transformedName);
+			
 	    	ClassNode classNode = new ClassNode();
 			ClassReader classReader = new ClassReader(basicClass);
 			classReader.accept(classNode, ClassReader.EXPAND_FRAMES);

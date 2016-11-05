@@ -23,8 +23,8 @@ plugins {
 */
 
 version = "1.0"
-group= "com.github.qingchenw.allow-color" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "allow-color-1.8"
+group= "com.github.wdawning.qingchenw.allow-color" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "allow-color-mc1.8"
 
 minecraft {
     version = "1.8-11.14.4.1563"
@@ -37,6 +37,13 @@ minecraft {
     // simply re-run your setup task after changing the mappings to update your workspace.
     mappings = "stable_18"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+}
+
+jar{
+    manifest {
+        attributes 'FMLCorePlugin': 'com.github.wdawning.qingchenw.allowcolor.AllowColorModPlugin'
+        attributes 'FMLAT': 'allowcolor_at.cfg'
+    }
 }
 
 dependencies {

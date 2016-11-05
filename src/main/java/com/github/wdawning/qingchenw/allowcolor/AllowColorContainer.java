@@ -1,19 +1,21 @@
-package com.github.qingchenw.allowcolor;
+package com.github.wdawning.qingchenw.allowcolor;
 
 import java.util.Arrays;
 
+import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 
 import net.minecraftforge.fml.common.DummyModContainer;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.LoadController;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.EventBus;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class AllowColorModContainer extends DummyModContainer
+public class AllowColorContainer extends DummyModContainer
 {
-	public AllowColorModContainer()
+	public AllowColorContainer()
 	{
 		super(new ModMetadata());
 		ModMetadata meta = getMetadata();
@@ -29,8 +31,15 @@ public class AllowColorModContainer extends DummyModContainer
 	public boolean registerBus(EventBus bus, LoadController controller)
 	{
 		bus.register(this);
+    	System.out.println("Allow Color Mod is enabled, and Event bus register completed.");
 		return true;
 	}
+	
+	@Subscribe
+    public void preInit(FMLPreInitializationEvent event)
+    {
+
+    }
 	
 	@Subscribe
 	public void init(FMLInitializationEvent event)
