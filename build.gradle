@@ -26,6 +26,8 @@ version = "1.0"
 group= "com.github.wdawning.qingchenw.allow-color" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "allow-color-mc1.8"
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 minecraft {
     version = "1.8-11.14.4.1563"
     runDir = "run"

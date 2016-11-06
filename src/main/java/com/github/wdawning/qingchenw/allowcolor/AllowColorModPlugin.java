@@ -5,7 +5,7 @@ import java.util.Map;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 @IFMLLoadingPlugin.Name("AllowColor")
-@IFMLLoadingPlugin.MCVersion("1.8")
+@IFMLLoadingPlugin.MCVersion("")
 @IFMLLoadingPlugin.TransformerExclusions("com.github.wdawning.qingchenw.allowcolor.")
 public class AllowColorModPlugin implements IFMLLoadingPlugin
 {

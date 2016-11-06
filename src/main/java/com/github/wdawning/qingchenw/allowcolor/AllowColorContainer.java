@@ -25,7 +25,7 @@ public class AllowColorContainer extends DummyModContainer
 		meta.authorList = Arrays.asList("QingChenW");
 		meta.description = "Type color codes in Minecraft.";
 		meta.credits = "Mojang, FML and Forge";
-		meta.url = "http://github.com/DawningW/Allow-Color-Mod";
+		meta.url = "https://github.com/DawningW/Allow-Color-Mod";
 	}
 	
 	public boolean registerBus(EventBus bus, LoadController controller)
