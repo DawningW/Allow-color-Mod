@@ -46,7 +46,6 @@ public class GuiEventLoader extends Gui
 	
     public GuiEventLoader()
     {
-        FMLCommonHandler.instance().bus().register(this);
         MinecraftForge.EVENT_BUS.register(this);
     }
     
@@ -76,31 +75,32 @@ public class GuiEventLoader extends Gui
     	{
     		if(event.button == button)
     		{
+    			String c = mc.getIntegratedServer() != null ? "§" : "&";
     			switch(event.button.id)
     			{
-    			case 0: this.mc.currentScreen.setText("\u00a7", false); break;
-    			case 1: this.mc.currentScreen.setText("§0", false); break;
-    			case 2: this.mc.currentScreen.setText("§1", false); break;
-    			case 3: this.mc.currentScreen.setText("§2", false); break;
-    			case 4: this.mc.currentScreen.setText("§3", false); break;
-    			case 5: this.mc.currentScreen.setText("§4", false); break;
-    			case 6: this.mc.currentScreen.setText("§5", false); break;
-    			case 7: this.mc.currentScreen.setText("§6", false); break;
-    			case 8: this.mc.currentScreen.setText("§7", false); break;
-    			case 9: this.mc.currentScreen.setText("§8", false); break;
-    			case 10: this.mc.currentScreen.setText("§9", false); break;
-    			case 11: this.mc.currentScreen.setText("§a", false); break;
-    			case 12: this.mc.currentScreen.setText("§b", false); break;
-    			case 13: this.mc.currentScreen.setText("§c", false); break;
-    			case 14: this.mc.currentScreen.setText("§d", false); break;
-    			case 15: this.mc.currentScreen.setText("§e", false); break;
-    			case 16: this.mc.currentScreen.setText("§f", false); break;
-    			case 17: this.mc.currentScreen.setText("§k", false); break;
-    			case 18: this.mc.currentScreen.setText("§l", false); break;
-    			case 19: this.mc.currentScreen.setText("§m", false); break;
-    			case 20: this.mc.currentScreen.setText("§n", false); break;
-    			case 21: this.mc.currentScreen.setText("§o", false); break;
-    			case 22: this.mc.currentScreen.setText("§r", false); break;
+    			case 0: this.mc.currentScreen.setText(c, false); break;
+    			case 1: this.mc.currentScreen.setText(c + "0", false); break;
+    			case 2: this.mc.currentScreen.setText(c + "1", false); break;
+    			case 3: this.mc.currentScreen.setText(c + "2", false); break;
+    			case 4: this.mc.currentScreen.setText(c + "3", false); break;
+    			case 5: this.mc.currentScreen.setText(c + "4", false); break;
+    			case 6: this.mc.currentScreen.setText(c + "5", false); break;
+    			case 7: this.mc.currentScreen.setText(c + "6", false); break;
+    			case 8: this.mc.currentScreen.setText(c + "7", false); break;
+    			case 9: this.mc.currentScreen.setText(c + "8", false); break;
+    			case 10: this.mc.currentScreen.setText(c + "9", false); break;
+    			case 11: this.mc.currentScreen.setText(c + "a", false); break;
+    			case 12: this.mc.currentScreen.setText(c + "b", false); break;
+    			case 13: this.mc.currentScreen.setText(c + "c", false); break;
+    			case 14: this.mc.currentScreen.setText(c + "d", false); break;
+    			case 15: this.mc.currentScreen.setText(c + "e", false); break;
+    			case 16: this.mc.currentScreen.setText(c + "f", false); break;
+    			case 17: this.mc.currentScreen.setText(c + "k", false); break;
+    			case 18: this.mc.currentScreen.setText(c + "l", false); break;
+    			case 19: this.mc.currentScreen.setText(c + "m", false); break;
+    			case 20: this.mc.currentScreen.setText(c + "n", false); break;
+    			case 21: this.mc.currentScreen.setText(c + "o", false); break;
+    			case 22: this.mc.currentScreen.setText(c + "r", false); break;
     			}
     		}
     	}
