@@ -55,14 +55,14 @@ public class GuiEventLoader extends Gui
 	{
 		if(this.mc.currentScreen instanceof GuiChat)
 		{
-			GuiScreen screen = event.gui;
+			GuiScreen screen = event.getGui();
 			for(int i = 0; i < buttons.length; i++)
 			{
 				buttons[i].xPosition = 2 + i * 14;
 				buttons[i].yPosition = (int)screen.height - 26;
 				buttons[i].width = 13;
 				buttons[i].height = 11;
-				event.buttonList.add(buttons[i]);
+				event.getButtonList().add(buttons[i]);
 			}
 		}
 	}
@@ -73,10 +73,10 @@ public class GuiEventLoader extends Gui
     {
     	for(GuiButton button : buttons)
     	{
-    		if(event.button == button)
+    		if(event.getButton() == button)
     		{
     			String c = mc.getIntegratedServer() != null ? "§" : "&";
-    			switch(event.button.id)
+    			switch(event.getButton().id)
     			{
     			case 0: this.mc.currentScreen.setText(c, false); break;
     			case 1: this.mc.currentScreen.setText(c + "0", false); break;
