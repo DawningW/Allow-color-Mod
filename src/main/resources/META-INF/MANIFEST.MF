@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-FMLCorePlugin: com.github.wdawning.qingchenw.allowcolor.AllowColorModPlugin
+FMLCorePlugin: io.github.dawncraft.qingchenw.allowcolor.AllowColorModPlugin
 

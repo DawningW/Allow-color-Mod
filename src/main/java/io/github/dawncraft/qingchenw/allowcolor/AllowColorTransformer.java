@@ -1,4 +1,4 @@
-package com.github.wdawning.qingchenw.allowcolor;
+package io.github.dawncraft.qingchenw.allowcolor;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,8 +12,8 @@ import net.minecraft.launchwrapper.IClassTransformer;
 
 public class AllowColorTransformer implements IClassTransformer
 {
-	private static final List CLASSNAMES = Arrays.asList("net.minecraft.util.ChatAllowedCharacters","v");
-	private static final List METHODNAMES = Arrays.asList("isAllowedCharacter","func_71566_a","a");
+	private static final List CLASSNAMES = Arrays.asList("net.minecraft.util.ChatAllowedCharacters", "v");
+	private static final List METHODNAMES = Arrays.asList("isAllowedCharacter", "func_71566_a", "a");
 	
 	@Override
 	public byte[] transform(String name, String transformedName, byte[] basicClass)

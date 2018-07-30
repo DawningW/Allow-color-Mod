@@ -1,24 +1,23 @@
-package com.github.wdawning.qingchenw.allowcolor;
+package io.github.dawncraft.qingchenw.allowcolor;
 
 import java.util.Map;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 @IFMLLoadingPlugin.Name("AllowColor")
-@IFMLLoadingPlugin.MCVersion("")
-@IFMLLoadingPlugin.TransformerExclusions("com.github.wdawning.qingchenw.allowcolor.")
+@IFMLLoadingPlugin.TransformerExclusions("io.github.dawncraft.qingchenw.allowcolor.")
 public class AllowColorModPlugin implements IFMLLoadingPlugin
 {
 	@Override
 	public String[] getASMTransformerClass()
 	{
-	    return new String[]{"com.github.wdawning.qingchenw.allowcolor.AllowColorTransformer"};
+	    return new String[]{"io.github.dawncraft.qingchenw.allowcolor.AllowColorTransformer"};
 	}
 
 	@Override
 	public String getModContainerClass()
 	{
-		return "com.github.wdawning.qingchenw.allowcolor.AllowColorContainer";
+		return "io.github.dawncraft.qingchenw.allowcolor.AllowColorContainer";
 	}
 
 	@Override
