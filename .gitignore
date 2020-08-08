@@ -1,26 +1,6 @@
-# exclude all
-/*
-
-# include sourcecode
-!src/
-!libs/
-!doc/
-
-# need gradle 
-!gradle/
-!gradlew
-!gradlew.bat
-!build.gradle
-
-# include markdowns
+!Vanilla
+!Forge
+!Fabric
+!picture.png
 !LICENSE
-!LICENSE-fml.txt
-!LICENSE-forge.txt
-!Paulscode IBXM Library License.txt
-!Paulscode SoundSystem CodecIBXM License.txt
-!README.txt
 !README.md
-
-# include git important files
-!.gitmodules
-!.gitignore

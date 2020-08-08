@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.qingchenw.allowcolor.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "AllowColorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,52 @@
+/*
+// For those who want the bleeding edge
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+*/
+
+// for people who want stable
+plugins {
+    id "net.minecraftforge.gradle.forge" version "2.0.2"
+}
+
+version = "2.1"
+group= "com.github.qingchenw.allowcolor"
+archivesBaseName = "allowcolor-forge(1.8-1.12)"
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
+minecraft {
+    version = "1.8-11.14.4.1577"
+    mappings = "stable_18"
+    runDir = "run"
+    // makeObfSourceJar = false
+}
+
+dependencies {}
+
+processResources
+{
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "allowcolor",
+  "version": "${version}",
+
+  "name": "AllowColor Mod",
+  "description": "Type color codes in Minecraft.",
+  "authors": [
+    "QingChenW"
+  ],
+  "contact": {
+    "homepage": "https://github.com/DawningW/Allow-Color-Mod",
+    "sources": "https://github.com/DawningW/Allow-Color-Mod"
+  },
+
+  "license": "GPL-3.0",
+  "icon": "assets/allowcolor/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.qingchenw.allowcolor.AllowColorMod"
+    ]
+  },
+  "mixins": [
+    "allowcolor.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*",
+    "minecraft": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
