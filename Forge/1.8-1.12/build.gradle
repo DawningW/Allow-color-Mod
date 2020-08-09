@@ -21,7 +21,7 @@ plugins {
 }
 
 version = "2.1"
-group= "com.github.qingchenw.allowcolor"
+group= "io.github.qingchenw.allowcolor"
 archivesBaseName = "allowcolor-forge(1.8-1.12)"
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'

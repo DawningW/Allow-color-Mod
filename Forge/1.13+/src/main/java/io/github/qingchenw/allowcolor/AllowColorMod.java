@@ -1,4 +1,4 @@
-package io.github.dawncraft.qingchenw.allowcolor;
+package io.github.qingchenw.allowcolor;
 
 import net.minecraft.util.SharedConstants;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,7 +27,7 @@ public class AllowColorMod
 
     public void setup(FMLCommonSetupEvent event)
     {
-        LOGGER.info("Allow Color Mod has been installed successfully, made by QingChenW");
+        LOGGER.info("Allow Color Mod has been installed successfully, made by QingChenW. ");
         LOGGER.info("Can you input format code? " + SharedConstants.isAllowedCharacter(FORMAT_CODE));
     }
 

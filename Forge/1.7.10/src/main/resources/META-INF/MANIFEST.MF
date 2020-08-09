@@ -1,4 +1,3 @@
 Manifest-Version: 1.0
-FMLCorePlugin: dawncraft.qingchenw.allowcolor.AllowColorModPlugin
-FMLAT: allowcolor_at.cfg
+FMLCorePlugin: io.github.qingchenw.allowcolor.AllowColorModPlugin
 
