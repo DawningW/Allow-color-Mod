@@ -1,12 +1,16 @@
 pluginManagement {
     repositories {
-        jcenter()
+        // jcenter()
+        maven {
+            name = 'jcenter'
+            url = 'https://maven.aliyun.com/repository/public'
+        }
         maven {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
         maven {
-            name = 'Fabric-mirror'
+            name = 'Fabric233' // mirror
             url = 'https://crystal.app.lss233.com/repositories/minecraft'
         }
         gradlePluginPortal()
