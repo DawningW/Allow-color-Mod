@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '3.1'
+version = '3.2'
 group = 'io.github.dawncraft.qingchenw'
 archivesBaseName = 'allowcolor-forge(1.13-1.16)'
 
