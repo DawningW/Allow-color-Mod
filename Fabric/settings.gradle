@@ -10,7 +10,7 @@ pluginManagement {
             url = 'https://maven.fabricmc.net/'
         }
         maven {
-            name = 'Fabric233' // mirror
+            name = 'lss233'// mirror
             url = 'https://crystal.app.lss233.com/repositories/minecraft'
         }
         gradlePluginPortal()

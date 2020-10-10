@@ -1,8 +1,16 @@
 buildscript {
     repositories {
+        maven {
+            name = 'lss233'
+            url = 'https://crystal.app.lss233.com/repositories/minecraft'
+        }
+        maven {
+            name = 'jcenter'
+            url = 'https://maven.aliyun.com/repository/public'
+        }
         maven { url = 'https://files.minecraftforge.net/maven' }
-        jcenter()
-        mavenCentral()
+        // jcenter()
+        // mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
@@ -47,6 +55,22 @@ minecraft {
                 }
             }
         }
+    }
+}
+
+repositories {
+    maven {
+        name = 'jcenter'
+        url = 'https://maven.aliyun.com/repository/public'
+    }
+    maven {
+        name = 'lss233'
+        url = 'https://crystal.app.lss233.com/repositories/minecraft'
+    }
+    maven { url = 'https://files.minecraftforge.net/maven' }
+    maven {
+        name = "minecraft"
+        url = "https://libraries.minecraft.net/"
     }
 }
 

@@ -31,5 +31,7 @@ Download: [MCBBS](https://www.mcbbs.net/thread-651063-1-1.html) or [Github](http
 Copyright© 2016-2020 QingChenW
 ### 1.8原版补丁
 由MCBBS的_Minecraft_(UID: 233723) 制作
+### 1.12.2原版补丁
+Copyright© 2016-2020 QingChenW
 
 原帖页面: [https://www.mcbbs.net/thread-502495-1-1.html](https://www.mcbbs.net/thread-502495-1-1.html)
