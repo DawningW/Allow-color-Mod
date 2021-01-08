@@ -28,12 +28,12 @@ Download: [MCBBS](https://www.mcbbs.net/thread-651063-1-1.html) or [Github](http
 
 ## Copyright
 ### Allow color mod
-Copyright© 2016-2020 QingChenW
+Copyright© 2016-2021 QingChenW
 ### 1.8原版补丁
 由MCBBS的_Minecraft_(UID: 233723) 制作
 
 原帖页面: [https://www.mcbbs.net/thread-502495-1-1.html](https://www.mcbbs.net/thread-502495-1-1.html)
 ### 1.12.2原版补丁
-Copyright© 2016-2020 QingChenW
+Copyright© 2016-2021 QingChenW
 ### 1.15.2原版补丁
-正在制作
+Copyright© 2016-2021 QingChenW
