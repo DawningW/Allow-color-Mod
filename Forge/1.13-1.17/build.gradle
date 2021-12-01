@@ -1,16 +1,12 @@
 buildscript {
     repositories {
-        maven {
-            name = 'lss233'
-            url = 'https://crystal.app.lss233.com/repositories/minecraft'
-        }
+        maven { url = 'https://files.minecraftforge.net/maven' }
         maven {
             name = 'jcenter'
             url = 'https://maven.aliyun.com/repository/public'
         }
-        maven { url = 'https://files.minecraftforge.net/maven' }
-        // jcenter()
-        // mavenCentral()
+        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
@@ -21,9 +17,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '3.2'
+version = '3.3'
 group = 'io.github.dawncraft.qingchenw'
-archivesBaseName = 'allowcolor-forge(1.13-1.16)'
+archivesBaseName = 'allowcolor-forge(1.13-1.17)'
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
@@ -39,7 +35,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                allowcolor{
+                allowcolor {
                     source sourceSets.main
                 }
             }
@@ -50,7 +46,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                allowcolor{
+                allowcolor {
                     source sourceSets.main
                 }
             }
@@ -62,10 +58,6 @@ repositories {
     maven {
         name = 'jcenter'
         url = 'https://maven.aliyun.com/repository/public'
-    }
-    maven {
-        name = 'lss233'
-        url = 'https://crystal.app.lss233.com/repositories/minecraft'
     }
     maven { url = 'https://files.minecraftforge.net/maven' }
     maven {
@@ -81,12 +73,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "Allow Color Mod",
-            "Specification-Vendor": "QingChenW",
-            "Specification-Version": "${version}",
-            "Implementation-Title": "io.github.dawncraft.qingchenw.allowcolor",
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"QingChenW",
+            "Specification-Title"     : "AllowColor Mod",
+            "Specification-Vendor"    : "QingChenW",
+            "Specification-Version"   : "${version}",
+            "Implementation-Title"    : "AllowColor Mod",
+            "Implementation-Version"  : "${version}",
+            "Implementation-Vendor"   : "QingChenW",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

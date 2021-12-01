@@ -1,10 +1,11 @@
 modLoader="javafml"
-loaderVersion="[24,)"
+loaderVersion="[38,)"
 license="GPLv3"
 showAsResourcePack=false
+issueTrackerURL="https://github.com/DawningW/Allow-Color-Mod/issues"
 [[mods]]
 modId="allowcolor"
-version="${version}"
+version="${file.jarVersion}"
 displayName="AllowColor Mod"
 displayURL="https://github.com/DawningW/Allow-Color-Mod"
 credits="Mojang, FML and Forge"
@@ -15,12 +16,12 @@ Type color codes in Minecraft.
 [[dependencies.allowcolor]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.13,)"
+    versionRange="[1.18,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.allowcolor]]
     modId="forge"
     mandatory=true
-    versionRange="[24,)"
+    versionRange="[38,)"
     ordering="NONE"
     side="BOTH"
