@@ -39,7 +39,7 @@ public class AllowColorContainer extends DummyModContainer {
     @Subscribe
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        logger().info("Allow Color Mod has been installed successfully, made by QingChenW. ");
+        logger().info("Allow Color Mod has been installed successfully, made by QingChenW.");
         logger().info("Can you input format code? " + ChatAllowedCharacters.isAllowedCharacter(FORMAT_CODE));
     }
     

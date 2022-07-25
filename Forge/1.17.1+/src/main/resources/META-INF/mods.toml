@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[38,)"
+loaderVersion="[37,)"
 license="GPLv3"
 showAsResourcePack=false
 issueTrackerURL="https://github.com/DawningW/Allow-Color-Mod/issues"
@@ -14,14 +14,14 @@ description='''
 Type color codes in Minecraft.
 '''
 [[dependencies.allowcolor]]
-    modId="minecraft"
+    modId="forge"
     mandatory=true
-    versionRange="[1.18,)"
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.allowcolor]]
-    modId="forge"
+    modId="minecraft"
     mandatory=true
-    versionRange="[38,)"
+    versionRange="[1.17.1,)"
     ordering="NONE"
     side="BOTH"

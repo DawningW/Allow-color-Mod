@@ -15,11 +15,11 @@ Download: [MCBBS](https://www.mcbbs.net/thread-651063-1-1.html) or [Github](http
 
 - 1.7.10: 仅适用于mc1.7.10, 不再更新
 - 1.8-1.12: 适用于mc1.8-1.12.2的所有版本(未完全测试)
-- 1.13-1.17: 适用于mc1.13-1.17.1的所有版本(未完全测试)
-- 1.18+: 适用于mc1.18及以上的全部版本
+- 1.13-1.17: 适用于mc1.13-1.17的所有版本(未完全测试)
+- 1.17.1+: 适用于mc1.17.1及以上的全部版本
 
 ## Fabric
-这里是Fabric版的样式代码输入Mod, 适用于1.14-1.18
+这里是Fabric版的样式代码输入Mod, 适用于1.14-1.19(未完全测试)
 
 ## Reference
 - [Minecraft wiki](https://minecraft-zh.gamepedia.com/样式代码)
@@ -29,7 +29,7 @@ Download: [MCBBS](https://www.mcbbs.net/thread-651063-1-1.html) or [Github](http
 
 ## Copyright
 ### Allow color mod
-Copyright© 2016-2021 QingChenW
+Copyright© 2016-2022 QingChenW
 ### 1.8原版补丁
 由MCBBS的_Minecraft_(UID: 233723) 制作
 
