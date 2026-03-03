@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "io.github.qingchenw.allowcolor.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	],
+	"client": [
+		"AllowColorMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -16,16 +16,25 @@ Download: [MCBBS](https://www.mcbbs.net/thread-651063-1-1.html) or [Github](http
 - 1.7.10: 仅适用于mc1.7.10, 不再更新
 - 1.8-1.12: 适用于mc1.8-1.12.2的所有版本(未完全测试)
 - 1.13-1.16: 适用于mc1.13-1.16.5的所有版本(未完全测试)
-- 1.17.1+: 适用于mc1.17.1及以上的全部版本
+- 1.17.1-1.20.4: 适用于mc1.17.1-1.20.4的所有版本(未完全测试)
+
+如无特殊需求, Forge版后续不再更新
+
+## NeoForge
+这里是NeoForge版的样式代码输入Mod, 适用于1.20.6及以上的全部版本(未完全测试)
 
 ## Fabric
-这里是Fabric版的样式代码输入Mod, 适用于1.14-1.19(未完全测试)
+这里是Fabric版的样式代码输入Mod
+
+- 1.14-1.20.4: 适用于1.14-1.20.4的所有版本(未完全测试)
+- 1.20.5-1.21.8: 适用于1.20.5-1.21.8的所有版本(未完全测试)
+- 1.21.9+: 适用于1.21.9及以上的全部版本(未完全测试)
 
 ## Reference
 - [Minecraft wiki](https://minecraft-zh.gamepedia.com/样式代码)
 - [白玉楼之梦 - Coremod的制作](http://blog.hakugyokurou.net/?p=333)
 - [原版 / FML CoreMod 开发教程](http://xfl03.gitee.io/coremodtutor/)
-- [Fabric版本查询](https://modmuss50.me/fabric.html)
+- [Fabric Wiki](https://wiki.fabricmc.net/tutorial:mixin_introduction)
 
 ## Copyright
 ### Allow color mod
